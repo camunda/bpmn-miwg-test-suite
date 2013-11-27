@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:camunda="http://activiti.org/bpmn" xsi:schemaLocation="http://www.omg.org/spec/BPMN/20100524/MODEL BPMN20.xsd">
+  <bpmn:process id="_c4dc816d-8a5b-7bd2-996d-2b26850e132d" name="UNNAMED Processs 2" isExecutable="false">
+    <bpmn:laneSet id="_1be637b8-a8b3-fffd-06f4-8b1baa326bd9" name="laneSet">
+      <bpmn:lane id="_51189c6e-e170-e206-9c03-6e5e07dbc9da" name="Lane 2">
+        <bpmn:flowNodeRef>_45a28b03-b862-9e83-9d8f-31a3cfc8c1bd</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>_96639727-19b9-fb9e-e887-1a592e0b0c11</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>_ddce284b-b382-8732-4ff6-690c1fef8bc6</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>_8c286d81-96f3-0c0d-423a-08eb17e9181b</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>_0785e34f-cee4-8dd1-2ac7-8970d58aa1b3</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>_1d6baa97-d53b-3f64-d879-160d1d9b17af</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>_17d7caa9-25b9-b64e-070a-48d78d33d45d</bpmn:flowNodeRef>
+      </bpmn:lane>
+      <bpmn:lane id="_46bf7fc8-e5fb-148d-8076-b85a75f8eb4d" name="Lane 1">
+        <bpmn:flowNodeRef>_f313f2c9-6ef3-db25-72dc-959d4c22a84e</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>_8a0601c5-8b74-0673-d3d3-99e473d3923d</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>_920101aa-7c3a-e0f4-2008-f584f359d7a2</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>_7fb4b193-8a08-7461-8c9d-9b9a11c32f65</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>_9098e339-fd2e-fb33-2090-7e8014f7e418</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>_a091c9d7-68ea-ec3b-63a7-b04ea446082d</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>_4516874a-d3b5-b295-fdeb-7cd1404ee73f</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>_8d38f5a0-71af-3131-cbb3-2d99afe88a57</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>_309c053c-5ba9-c01d-c2d7-0b70ac864ac4</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>_b8cdbe0e-f607-73bd-4664-019bea717d8a</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>_dc0b1c35-59e7-e443-c84e-b9c9470b4e6b</bpmn:flowNodeRef>
+      </bpmn:lane>
+    </bpmn:laneSet>
+    <bpmn:subProcess id="_7fb4b193-8a08-7461-8c9d-9b9a11c32f65" name="Call Activity - Expanded">
+      <bpmn:incoming>_9facafa0-3479-86cf-ea4d-9d0e3a383aa6</bpmn:incoming>
+      <bpmn:outgoing>_5dd0acf6-b764-76b9-cabc-f28fd573cb81</bpmn:outgoing>
+      <bpmn:startEvent id="_309c053c-5ba9-c01d-c2d7-0b70ac864ac4" name="Start Event None 1">
+        <bpmn:outgoing>_ff0ad78d-6f93-2d03-b72f-feaf064e53b3</bpmn:outgoing>
+      </bpmn:startEvent>
+      <bpmn:endEvent id="_dc0b1c35-59e7-e443-c84e-b9c9470b4e6b" name="End Event None 2">
+        <bpmn:incoming>_d0186704-952e-0ad0-3547-dbcaaafd7ccf</bpmn:incoming>
+      </bpmn:endEvent>
+      <bpmn:task id="_b8cdbe0e-f607-73bd-4664-019bea717d8a" name="Abstract Task 4">
+        <bpmn:incoming>_ff0ad78d-6f93-2d03-b72f-feaf064e53b3</bpmn:incoming>
+        <bpmn:outgoing>_d0186704-952e-0ad0-3547-dbcaaafd7ccf</bpmn:outgoing>
+      </bpmn:task>
+      <bpmn:sequenceFlow id="_d0186704-952e-0ad0-3547-dbcaaafd7ccf" isImmediate="true" sourceRef="_b8cdbe0e-f607-73bd-4664-019bea717d8a" targetRef="_dc0b1c35-59e7-e443-c84e-b9c9470b4e6b"/>
+      <bpmn:sequenceFlow id="_ff0ad78d-6f93-2d03-b72f-feaf064e53b3" isImmediate="true" sourceRef="_309c053c-5ba9-c01d-c2d7-0b70ac864ac4" targetRef="_b8cdbe0e-f607-73bd-4664-019bea717d8a"/>
+    </bpmn:subProcess>
+    <bpmn:subProcess id="_8c286d81-96f3-0c0d-423a-08eb17e9181b" name="Sub Process - Expanded">
+      <bpmn:incoming>_4d0b6622-6f77-9937-a2db-70dbcdd72de4</bpmn:incoming>
+      <bpmn:outgoing>_7012368d-efde-ea3f-df08-0731e407d63e</bpmn:outgoing>
+      <bpmn:startEvent id="_9657b99e-2a08-a975-dca1-ccc935006572" name="Start Event None 2">
+        <bpmn:outgoing>_85ff9a09-dd10-b0dd-c40d-b0db0a2715ce</bpmn:outgoing>
+      </bpmn:startEvent>
+      <bpmn:endEvent id="_8e4ce236-bcf2-ba87-78ca-fa9fa961ac7a" name="End Event None 3">
+        <bpmn:incoming>_827c53c9-0c6c-c296-6d2f-d84e379bf296</bpmn:incoming>
+      </bpmn:endEvent>
+      <bpmn:task id="_5f59dd81-f018-4438-d08b-b23bfc9d1631" name="Abstract Task 6">
+        <bpmn:incoming>_85ff9a09-dd10-b0dd-c40d-b0db0a2715ce</bpmn:incoming>
+        <bpmn:outgoing>_827c53c9-0c6c-c296-6d2f-d84e379bf296</bpmn:outgoing>
+      </bpmn:task>
+      <bpmn:sequenceFlow id="_827c53c9-0c6c-c296-6d2f-d84e379bf296" isImmediate="true" sourceRef="_5f59dd81-f018-4438-d08b-b23bfc9d1631" targetRef="_8e4ce236-bcf2-ba87-78ca-fa9fa961ac7a"/>
+      <bpmn:sequenceFlow id="_85ff9a09-dd10-b0dd-c40d-b0db0a2715ce" isImmediate="true" sourceRef="_9657b99e-2a08-a975-dca1-ccc935006572" targetRef="_5f59dd81-f018-4438-d08b-b23bfc9d1631"/>
+    </bpmn:subProcess>
+    <bpmn:userTask id="_ddce284b-b382-8732-4ff6-690c1fef8bc6" name="User Task 5">
+      <bpmn:incoming>_cf13992a-b21d-971a-c5f6-c7596b02b5a1</bpmn:incoming>
+      <bpmn:outgoing>_0416926f-8caf-6079-f594-17c2f05a0c27</bpmn:outgoing>
+    </bpmn:userTask>
+    <bpmn:exclusiveGateway id="_a091c9d7-68ea-ec3b-63a7-b04ea446082d" name="Exclusive Gateway Divergence 1" gatewayDirection="Diverging">
+      <bpmn:incoming>_a7098057-1061-d736-96b7-ef0ab86b0a4d</bpmn:incoming>
+      <bpmn:outgoing>_94bbb2f7-591d-3234-b300-80e06d17948c</bpmn:outgoing>
+      <bpmn:outgoing>_1fb5cb2a-2843-486c-7d17-01809c1cbf82</bpmn:outgoing>
+    </bpmn:exclusiveGateway>
+    <bpmn:endEvent id="_4516874a-d3b5-b295-fdeb-7cd1404ee73f" name="End Event Message">
+      <bpmn:incoming>_45445ada-c7ce-de01-2270-1a9f836cedb4</bpmn:incoming>
+      <bpmn:eventDefinitionRef>_c0e6dc98-33cb-dd10-329c-a137497fa4cc</bpmn:eventDefinitionRef>
+    </bpmn:endEvent>
+    <bpmn:callActivity id="_8d38f5a0-71af-3131-cbb3-2d99afe88a57" name="Call Activity Calling a Global Task_" camunda:calledElement="_72adb448-7dd9-5d5e-e4c6-3640d52f6dcc">
+      <bpmn:incoming>_1fb5cb2a-2843-486c-7d17-01809c1cbf82</bpmn:incoming>
+      <bpmn:outgoing>_91a53352-aedc-d628-cfb8-d7b2f8c819ed</bpmn:outgoing>
+    </bpmn:callActivity>
+    <bpmn:endEvent id="_1d6baa97-d53b-3f64-d879-160d1d9b17af" name="End Event Terminate">
+      <bpmn:incoming>_1f7e3888-ed84-5bbe-44f7-5c9074267d64</bpmn:incoming>
+      <bpmn:eventDefinitionRef>_75112b66-55f0-d34b-c4c3-fad7762f3a50</bpmn:eventDefinitionRef>
+    </bpmn:endEvent>
+    <bpmn:serviceTask id="_17d7caa9-25b9-b64e-070a-48d78d33d45d" name="Service Task 7" implementation="##unspecified">
+      <bpmn:incoming>_b100ca95-8e55-9bb5-716a-3c56fc437f53</bpmn:incoming>
+      <bpmn:outgoing>_94e1d591-6529-b73f-f4f6-f41e6637b99c</bpmn:outgoing>
+      <bpmn:ioSpecification>
+        <bpmn:dataInput id="_286939f9-d705-8cd5-b4ae-7baa21eb895b" name="Data Object"/>
+        <bpmn:dataOutput id="_ae890d5f-03f7-5726-0553-cbc981e1aaf1" name="Data Store Reference"/>
+        <bpmn:inputSet/>
+        <bpmn:outputSet/>
+      </bpmn:ioSpecification>
+      <bpmn:dataInputAssociation id="_cd66d9e2-58f8-3765-d65d-e41bccefefef">
+        <bpmn:sourceRef>_839cae9f-e8f7-35c8-5423-f89743be89e7</bpmn:sourceRef>
+        <bpmn:targetRef>_286939f9-d705-8cd5-b4ae-7baa21eb895b</bpmn:targetRef>
+      </bpmn:dataInputAssociation>
+      <bpmn:dataOutputAssociation id="_0772c8af-8c19-28aa-947c-a51d55bc0421">
+        <bpmn:sourceRef>_ae890d5f-03f7-5726-0553-cbc981e1aaf1</bpmn:sourceRef>
+        <bpmn:targetRef>_f1cbe02a-c75d-4ed4-5a4b-5300df35be0b</bpmn:targetRef>
+      </bpmn:dataOutputAssociation>
+    </bpmn:serviceTask>
+    <bpmn:exclusiveGateway id="_0785e34f-cee4-8dd1-2ac7-8970d58aa1b3" name="Exclusive Gateway Convergence 2" gatewayDirection="Converging">
+      <bpmn:incoming>_7012368d-efde-ea3f-df08-0731e407d63e</bpmn:incoming>
+      <bpmn:incoming>_94e1d591-6529-b73f-f4f6-f41e6637b99c</bpmn:incoming>
+      <bpmn:outgoing>_1f7e3888-ed84-5bbe-44f7-5c9074267d64</bpmn:outgoing>
+    </bpmn:exclusiveGateway>
+    <bpmn:exclusiveGateway id="_96639727-19b9-fb9e-e887-1a592e0b0c11" name="Exclusive Gateway Divergence 2" gatewayDirection="Diverging">
+      <bpmn:incoming>_0416926f-8caf-6079-f594-17c2f05a0c27</bpmn:incoming>
+      <bpmn:outgoing>_2cc305a5-4b37-b1c5-99cd-d00af5951354</bpmn:outgoing>
+      <bpmn:outgoing>_b100ca95-8e55-9bb5-716a-3c56fc437f53</bpmn:outgoing>
+    </bpmn:exclusiveGateway>
+    <bpmn:callActivity id="_45a28b03-b862-9e83-9d8f-31a3cfc8c1bd" name="Collapsed Sub-Process" camunda:calledElement="_7676b3d1-117a-a2c6-dc03-3ca3d8f282c8">
+      <bpmn:incoming>_2cc305a5-4b37-b1c5-99cd-d00af5951354</bpmn:incoming>
+      <bpmn:outgoing>_4d0b6622-6f77-9937-a2db-70dbcdd72de4</bpmn:outgoing>
+    </bpmn:callActivity>
+    <bpmn:callActivity id="_920101aa-7c3a-e0f4-2008-f584f359d7a2" name="Call Activity Collapsed" camunda:calledElement="_5596280f-1f6b-caad-7161-0abbe7d4984c">
+      <bpmn:incoming>_94bbb2f7-591d-3234-b300-80e06d17948c</bpmn:incoming>
+      <bpmn:outgoing>_9facafa0-3479-86cf-ea4d-9d0e3a383aa6</bpmn:outgoing>
+    </bpmn:callActivity>
+    <bpmn:exclusiveGateway id="_9098e339-fd2e-fb33-2090-7e8014f7e418" gatewayDirection="Converging">
+      <bpmn:incoming>_5dd0acf6-b764-76b9-cabc-f28fd573cb81</bpmn:incoming>
+      <bpmn:incoming>_91a53352-aedc-d628-cfb8-d7b2f8c819ed</bpmn:incoming>
+      <bpmn:outgoing>_45445ada-c7ce-de01-2270-1a9f836cedb4</bpmn:outgoing>
+    </bpmn:exclusiveGateway>
+    <bpmn:startEvent id="_f313f2c9-6ef3-db25-72dc-959d4c22a84e" name="Start Event Message">
+      <bpmn:outgoing>_630f7e9c-a9f7-5a48-dcf0-07cd4f032bc1</bpmn:outgoing>
+      <bpmn:eventDefinitionRef>_5df18398-9d9e-9bab-94e2-95b63b611da8</bpmn:eventDefinitionRef>
+    </bpmn:startEvent>
+    <bpmn:parallelGateway id="_8a0601c5-8b74-0673-d3d3-99e473d3923d" name="Parallel Gateway Divergence" gatewayDirection="Diverging">
+      <bpmn:incoming>_630f7e9c-a9f7-5a48-dcf0-07cd4f032bc1</bpmn:incoming>
+      <bpmn:outgoing>_a7098057-1061-d736-96b7-ef0ab86b0a4d</bpmn:outgoing>
+      <bpmn:outgoing>_cf13992a-b21d-971a-c5f6-c7596b02b5a1</bpmn:outgoing>
+    </bpmn:parallelGateway>
+    <bpmn:dataObject id="_839cae9f-e8f7-35c8-5423-f89743be89e7" name="Data Object"/>
+    <bpmn:dataObjectReference id="dataObjectRef_839cae9f-e8f7-35c8-5423-f89743be89e7" name="Data Object" dataObjectRef="_839cae9f-e8f7-35c8-5423-f89743be89e7"/>
+    <bpmn:dataStoreReference id="_f1cbe02a-c75d-4ed4-5a4b-5300df35be0b" name="Data Store Reference"/>
+    <bpmn:sequenceFlow id="_45445ada-c7ce-de01-2270-1a9f836cedb4" isImmediate="true" sourceRef="_9098e339-fd2e-fb33-2090-7e8014f7e418" targetRef="_4516874a-d3b5-b295-fdeb-7cd1404ee73f"/>
+    <bpmn:sequenceFlow id="_7012368d-efde-ea3f-df08-0731e407d63e" isImmediate="true" sourceRef="_8c286d81-96f3-0c0d-423a-08eb17e9181b" targetRef="_0785e34f-cee4-8dd1-2ac7-8970d58aa1b3"/>
+    <bpmn:sequenceFlow id="_cf13992a-b21d-971a-c5f6-c7596b02b5a1" isImmediate="true" sourceRef="_8a0601c5-8b74-0673-d3d3-99e473d3923d" targetRef="_ddce284b-b382-8732-4ff6-690c1fef8bc6"/>
+    <bpmn:sequenceFlow id="_630f7e9c-a9f7-5a48-dcf0-07cd4f032bc1" isImmediate="true" sourceRef="_f313f2c9-6ef3-db25-72dc-959d4c22a84e" targetRef="_8a0601c5-8b74-0673-d3d3-99e473d3923d"/>
+    <bpmn:sequenceFlow id="_1f7e3888-ed84-5bbe-44f7-5c9074267d64" isImmediate="true" sourceRef="_0785e34f-cee4-8dd1-2ac7-8970d58aa1b3" targetRef="_1d6baa97-d53b-3f64-d879-160d1d9b17af"/>
+    <bpmn:sequenceFlow id="_94e1d591-6529-b73f-f4f6-f41e6637b99c" isImmediate="true" sourceRef="_17d7caa9-25b9-b64e-070a-48d78d33d45d" targetRef="_0785e34f-cee4-8dd1-2ac7-8970d58aa1b3"/>
+    <bpmn:sequenceFlow id="_4d0b6622-6f77-9937-a2db-70dbcdd72de4" isImmediate="true" sourceRef="_45a28b03-b862-9e83-9d8f-31a3cfc8c1bd" targetRef="_8c286d81-96f3-0c0d-423a-08eb17e9181b"/>
+    <bpmn:sequenceFlow id="_5dd0acf6-b764-76b9-cabc-f28fd573cb81" isImmediate="true" sourceRef="_7fb4b193-8a08-7461-8c9d-9b9a11c32f65" targetRef="_9098e339-fd2e-fb33-2090-7e8014f7e418"/>
+    <bpmn:sequenceFlow id="_91a53352-aedc-d628-cfb8-d7b2f8c819ed" isImmediate="true" sourceRef="_8d38f5a0-71af-3131-cbb3-2d99afe88a57" targetRef="_9098e339-fd2e-fb33-2090-7e8014f7e418"/>
+    <bpmn:sequenceFlow id="_1fb5cb2a-2843-486c-7d17-01809c1cbf82" isImmediate="true" sourceRef="_a091c9d7-68ea-ec3b-63a7-b04ea446082d" targetRef="_8d38f5a0-71af-3131-cbb3-2d99afe88a57"/>
+    <bpmn:sequenceFlow id="_94bbb2f7-591d-3234-b300-80e06d17948c" sourceRef="_a091c9d7-68ea-ec3b-63a7-b04ea446082d" targetRef="_920101aa-7c3a-e0f4-2008-f584f359d7a2"/>
+    <bpmn:sequenceFlow id="_9facafa0-3479-86cf-ea4d-9d0e3a383aa6" isImmediate="true" sourceRef="_920101aa-7c3a-e0f4-2008-f584f359d7a2" targetRef="_7fb4b193-8a08-7461-8c9d-9b9a11c32f65"/>
+    <bpmn:sequenceFlow id="_2cc305a5-4b37-b1c5-99cd-d00af5951354" isImmediate="true" sourceRef="_96639727-19b9-fb9e-e887-1a592e0b0c11" targetRef="_45a28b03-b862-9e83-9d8f-31a3cfc8c1bd"/>
+    <bpmn:sequenceFlow id="_a7098057-1061-d736-96b7-ef0ab86b0a4d" isImmediate="true" sourceRef="_8a0601c5-8b74-0673-d3d3-99e473d3923d" targetRef="_a091c9d7-68ea-ec3b-63a7-b04ea446082d"/>
+    <bpmn:sequenceFlow id="_0416926f-8caf-6079-f594-17c2f05a0c27" isImmediate="true" sourceRef="_ddce284b-b382-8732-4ff6-690c1fef8bc6" targetRef="_96639727-19b9-fb9e-e887-1a592e0b0c11"/>
+    <bpmn:sequenceFlow id="_b100ca95-8e55-9bb5-716a-3c56fc437f53" isImmediate="true" sourceRef="_96639727-19b9-fb9e-e887-1a592e0b0c11" targetRef="_17d7caa9-25b9-b64e-070a-48d78d33d45d"/>
+  </bpmn:process>
+  <bpmn:process id="_5596280f-1f6b-caad-7161-0abbe7d4984c" name="Call Activity Collapsed" isExecutable="false">
+    <bpmn:startEvent id="_ec57e9a4-9bca-b01e-a721-c6850eb091fc"/>
+  </bpmn:process>
+  <bpmn:process id="_7676b3d1-117a-a2c6-dc03-3ca3d8f282c8" name="Collapsed Sub-Process" isExecutable="false"/>
+  <bpmn:process id="_85218667-6884-7f06-6b0f-cb4d79723f96" name="UNNAMED Process 1" isExecutable="false">
+    <bpmn:endEvent id="_a60f2037-6053-fbca-30af-4199e6b13909" name="End Event None 1">
+      <bpmn:incoming>_11036110-d00b-6c5c-f630-057a98f5348d</bpmn:incoming>
+    </bpmn:endEvent>
+    <bpmn:userTask id="_7fb17a6d-3835-1140-ba5d-9f438dcdf503" name="User Task 2">
+      <bpmn:incoming>_033d9481-4013-508c-ef5d-23cf8d8dc7d0</bpmn:incoming>
+      <bpmn:outgoing>_836cd916-1c21-dc03-ad46-d2e578370c9d</bpmn:outgoing>
+    </bpmn:userTask>
+    <bpmn:serviceTask id="_1c352991-2aef-483e-4485-c2c5720c539f" name="Service Task 3" implementation="##unspecified">
+      <bpmn:incoming>_836cd916-1c21-dc03-ad46-d2e578370c9d</bpmn:incoming>
+      <bpmn:outgoing>_11036110-d00b-6c5c-f630-057a98f5348d</bpmn:outgoing>
+    </bpmn:serviceTask>
+    <bpmn:startEvent id="_096dc019-8208-7c38-8ab9-63be56410d2b" name="Start Event Timer">
+      <bpmn:outgoing>_a93f3203-90c4-0f01-d26f-df5aee4261ab</bpmn:outgoing>
+      <bpmn:eventDefinitionRef>_9d58f7ce-7f9a-6473-d478-6517e28d6309</bpmn:eventDefinitionRef>
+    </bpmn:startEvent>
+    <bpmn:task id="_e25a04d8-ab9f-33fd-58b9-53a02a601171" name="Abstract Task 1">
+      <bpmn:incoming>_a93f3203-90c4-0f01-d26f-df5aee4261ab</bpmn:incoming>
+      <bpmn:outgoing>_033d9481-4013-508c-ef5d-23cf8d8dc7d0</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:sequenceFlow id="_033d9481-4013-508c-ef5d-23cf8d8dc7d0" isImmediate="true" sourceRef="_e25a04d8-ab9f-33fd-58b9-53a02a601171" targetRef="_7fb17a6d-3835-1140-ba5d-9f438dcdf503"/>
+    <bpmn:sequenceFlow id="_11036110-d00b-6c5c-f630-057a98f5348d" isImmediate="true" sourceRef="_1c352991-2aef-483e-4485-c2c5720c539f" targetRef="_a60f2037-6053-fbca-30af-4199e6b13909"/>
+    <bpmn:sequenceFlow id="_a93f3203-90c4-0f01-d26f-df5aee4261ab" isImmediate="true" sourceRef="_096dc019-8208-7c38-8ab9-63be56410d2b" targetRef="_e25a04d8-ab9f-33fd-58b9-53a02a601171"/>
+    <bpmn:sequenceFlow id="_836cd916-1c21-dc03-ad46-d2e578370c9d" isImmediate="true" sourceRef="_7fb17a6d-3835-1140-ba5d-9f438dcdf503" targetRef="_1c352991-2aef-483e-4485-c2c5720c539f"/>
+  </bpmn:process>
+  <bpmn:terminateEventDefinition id="_75112b66-55f0-d34b-c4c3-fad7762f3a50"/>
+  <bpmn:globalTask name="Call Activity Calling a Global Task"/>
+  <bpmn:timerEventDefinition id="_9d58f7ce-7f9a-6473-d478-6517e28d6309">
+    <bpmn:timeDate xsi:type="bpmn:tFormalExpression"/>
+  </bpmn:timerEventDefinition>
+  <bpmn:messageEventDefinition id="_5df18398-9d9e-9bab-94e2-95b63b611da8"/>
+  <bpmn:messageEventDefinition id="_c0e6dc98-33cb-dd10-329c-a137497fa4cc"/>
+  <bpmn:collaboration id="_61008988-1ff6-fbbc-1e9b-b417642855a7" name="UNNAMED Collaboration">
+    <bpmn:participant id="_f7084da5-4a0f-24f3-007c-efd4f7fe12c0" name="Participant" processRef="_85218667-6884-7f06-6b0f-cb4d79723f96"/>
+    <bpmn:participant id="_54d5f626-660e-2f5d-e9b6-2ae9fd038f95" name="Pool" processRef="_c4dc816d-8a5b-7bd2-996d-2b26850e132d"/>
+    <bpmn:messageFlow id="_f965c777-ab10-7c12-1fcc-742f4f9cb668" name="Nachrichtenfluss" sourceRef="_e25a04d8-ab9f-33fd-58b9-53a02a601171" targetRef="_f313f2c9-6ef3-db25-72dc-959d4c22a84e"/>
+    <bpmn:messageFlow id="_1f1943dd-ccca-c01a-2cb1-317100ae22e2" name="Nachrichtenfluss" sourceRef="_4516874a-d3b5-b295-fdeb-7cd1404ee73f" targetRef="_1c352991-2aef-483e-4485-c2c5720c539f"/>
+  </bpmn:collaboration>
+  <bpmndi:BPMNDiagram id="BPMNDiagram_1">
+    <bpmndi:BPMNPlane id="BPMNPlane_1"/>
+  </bpmndi:BPMNDiagram>
+</bpmn:definitions>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xsi:schemaLocation="http://www.omg.org/spec/BPMN/20100524/MODEL BPMN20.xsd">
+  <bpmn:process id="WFP-6-" name="Neuer Prozess" isExecutable="false" processType="Private">
+    <bpmn:endEvent id="_a47df184-085b-49f7-bb82-031c84625821" name="End Event">
+      <bpmn:incoming>_574e63ee-963f-d5c2-84bc-090c0861ac2e</bpmn:incoming>
+    </bpmn:endEvent>
+    <bpmn:task id="_820c21c0-45f3-473b-813f-06381cc637cd" name="Task 2">
+      <bpmn:incoming>_05395879-0abb-343a-149f-133e879aab22</bpmn:incoming>
+      <bpmn:outgoing>_518c60c1-0f3c-934b-2256-366ddc26d935</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:task id="_e70a6fcb-913c-4a7b-a65d-e83adc73d69c" name="Task 3">
+      <bpmn:incoming>_518c60c1-0f3c-934b-2256-366ddc26d935</bpmn:incoming>
+      <bpmn:outgoing>_574e63ee-963f-d5c2-84bc-090c0861ac2e</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:startEvent id="_93c466ab-b271-4376-a427-f4c353d55ce8" name="Start Event">
+      <bpmn:outgoing>_0b22992a-e5f7-e3d2-2358-785582e35287</bpmn:outgoing>
+    </bpmn:startEvent>
+    <bpmn:task id="_ec59e164-68b4-4f94-98de-ffb1c58a84af" name="Task 1">
+      <bpmn:incoming>_0b22992a-e5f7-e3d2-2358-785582e35287</bpmn:incoming>
+      <bpmn:outgoing>_05395879-0abb-343a-149f-133e879aab22</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:sequenceFlow id="_05395879-0abb-343a-149f-133e879aab22" sourceRef="_ec59e164-68b4-4f94-98de-ffb1c58a84af" targetRef="_820c21c0-45f3-473b-813f-06381cc637cd"/>
+    <bpmn:sequenceFlow id="_574e63ee-963f-d5c2-84bc-090c0861ac2e" sourceRef="_e70a6fcb-913c-4a7b-a65d-e83adc73d69c" targetRef="_a47df184-085b-49f7-bb82-031c84625821"/>
+    <bpmn:sequenceFlow id="_0b22992a-e5f7-e3d2-2358-785582e35287" sourceRef="_93c466ab-b271-4376-a427-f4c353d55ce8" targetRef="_ec59e164-68b4-4f94-98de-ffb1c58a84af"/>
+    <bpmn:sequenceFlow id="_518c60c1-0f3c-934b-2256-366ddc26d935" sourceRef="_820c21c0-45f3-473b-813f-06381cc637cd" targetRef="_e70a6fcb-913c-4a7b-a65d-e83adc73d69c"/>
+  </bpmn:process>
+  <bpmndi:BPMNDiagram id="BPMNDiagram_1">
+    <bpmndi:BPMNPlane id="BPMNPlane_1"/>
+  </bpmndi:BPMNDiagram>
+</bpmn:definitions>

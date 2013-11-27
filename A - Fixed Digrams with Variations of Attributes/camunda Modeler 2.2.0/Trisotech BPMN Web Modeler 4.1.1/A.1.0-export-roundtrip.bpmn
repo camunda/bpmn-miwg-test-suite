@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<semantic:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:bpsim="http://www.bpsim.org/schemas/1.0" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:semantic="http://www.omg.org/spec/BPMN/20100524/MODEL" xsi:schemaLocation="http://www.omg.org/spec/BPMN/20100524/MODEL BPMN20.xsd" id="CC198841-948D-4577-B6E2-8C70BA5A145D" name="A.1.0" targetNamespace="http://www.trisotech.com/definitions/CC198841-948D-4577-B6E2-8C70BA5A145D">
+  <semantic:process id="WFP-Page_sid-9d8bc1e2-52b1-4b39-ba7d-7bb10d663194-" isExecutable="false">
+    <semantic:startEvent id="_81697ECE-3CB4-4E44-BF96-1B13739E24ED" name="Start Event">
+      <semantic:outgoing>_D38BD4A4-1A53-481A-9326-F40CB15150B9</semantic:outgoing>
+    </semantic:startEvent>
+    <semantic:task id="_360ED28D-3647-4F30-BA0A-85D9114C5AC6" name="Task 1">
+      <semantic:incoming>_D38BD4A4-1A53-481A-9326-F40CB15150B9</semantic:incoming>
+      <semantic:outgoing>_E610AE99-2587-4133-8441-CF1175FF654A</semantic:outgoing>
+    </semantic:task>
+    <semantic:task id="_97C3869F-B23E-4BC1-A5D4-80C4DFE09284" name="Task 2">
+      <semantic:incoming>_E610AE99-2587-4133-8441-CF1175FF654A</semantic:incoming>
+      <semantic:outgoing>_C11CD779-2E3D-4969-B5D2-DD8106511B25</semantic:outgoing>
+    </semantic:task>
+    <semantic:task id="_B0D4D860-0954-4C5E-8F79-A30D7B33F82F" name="Task 3">
+      <semantic:incoming>_C11CD779-2E3D-4969-B5D2-DD8106511B25</semantic:incoming>
+      <semantic:outgoing>_B16A0F21-A1A5-4330-8D7C-207C5D3DBA55</semantic:outgoing>
+    </semantic:task>
+    <semantic:endEvent id="_4FD63CC3-DF28-46B1-898D-C163F644FAB7" name="End Event">
+      <semantic:incoming>_B16A0F21-A1A5-4330-8D7C-207C5D3DBA55</semantic:incoming>
+    </semantic:endEvent>
+    <semantic:sequenceFlow id="_D38BD4A4-1A53-481A-9326-F40CB15150B9" name="" sourceRef="_81697ECE-3CB4-4E44-BF96-1B13739E24ED" targetRef="_360ED28D-3647-4F30-BA0A-85D9114C5AC6"/>
+    <semantic:sequenceFlow id="_E610AE99-2587-4133-8441-CF1175FF654A" name="" sourceRef="_360ED28D-3647-4F30-BA0A-85D9114C5AC6" targetRef="_97C3869F-B23E-4BC1-A5D4-80C4DFE09284"/>
+    <semantic:sequenceFlow id="_C11CD779-2E3D-4969-B5D2-DD8106511B25" name="" sourceRef="_97C3869F-B23E-4BC1-A5D4-80C4DFE09284" targetRef="_B0D4D860-0954-4C5E-8F79-A30D7B33F82F"/>
+    <semantic:sequenceFlow id="_B16A0F21-A1A5-4330-8D7C-207C5D3DBA55" name="" sourceRef="_B0D4D860-0954-4C5E-8F79-A30D7B33F82F" targetRef="_4FD63CC3-DF28-46B1-898D-C163F644FAB7"/>
+  </semantic:process>
+  <bpmndi:BPMNDiagram documentation="" id="oryx.json-Page_sid-9d8bc1e2-52b1-4b39-ba7d-7bb10d663194" name="A.1.0" resolution="96.0">
+    <bpmndi:BPMNPlane bpmnElement="WFP-Page_sid-9d8bc1e2-52b1-4b39-ba7d-7bb10d663194-">
+      <bpmndi:BPMNShape id="S1373394774244__81697ECE-3CB4-4E44-BF96-1B13739E24ED" bpmnElement="_81697ECE-3CB4-4E44-BF96-1B13739E24ED">
+        <dc:Bounds height="32.0" width="32.0" x="154.0" y="228.0"/>
+        <bpmndi:BPMNLabel labelStyle="LS1373394774245">
+          <dc:Bounds height="14.0" width="53.0" x="143.5" y="270.0"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="S1373394774246__360ED28D-3647-4F30-BA0A-85D9114C5AC6" bpmnElement="_360ED28D-3647-4F30-BA0A-85D9114C5AC6">
+        <dc:Bounds height="76.0" width="96.0" x="231.0" y="206.0"/>
+        <bpmndi:BPMNLabel labelStyle="LS1373394774245">
+          <dc:Bounds height="14.0" width="32.0" x="263.0" y="237.0"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="S1373394774247__97C3869F-B23E-4BC1-A5D4-80C4DFE09284" bpmnElement="_97C3869F-B23E-4BC1-A5D4-80C4DFE09284">
+        <dc:Bounds height="76.0" width="96.0" x="372.0" y="206.0"/>
+        <bpmndi:BPMNLabel labelStyle="LS1373394774245">
+          <dc:Bounds height="14.0" width="32.0" x="404.0" y="237.0"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="S1373394774248__B0D4D860-0954-4C5E-8F79-A30D7B33F82F" bpmnElement="_B0D4D860-0954-4C5E-8F79-A30D7B33F82F">
+        <dc:Bounds height="76.0" width="96.0" x="513.0" y="206.0"/>
+        <bpmndi:BPMNLabel labelStyle="LS1373394774245">
+          <dc:Bounds height="14.0" width="32.0" x="545.0" y="237.0"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="S1373394774249__4FD63CC3-DF28-46B1-898D-C163F644FAB7" bpmnElement="_4FD63CC3-DF28-46B1-898D-C163F644FAB7">
+        <dc:Bounds height="36.0" width="36.0" x="654.0" y="226.0"/>
+        <bpmndi:BPMNLabel labelStyle="LS1373394774245">
+          <dc:Bounds height="14.0" width="48.0" x="648.0" y="272.0"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="E1373394774251__B16A0F21-A1A5-4330-8D7C-207C5D3DBA55" bpmnElement="_B16A0F21-A1A5-4330-8D7C-207C5D3DBA55">
+        <di:waypoint xsi:type="dc:Point" x="610.0" y="245.0"/>
+        <di:waypoint xsi:type="dc:Point" x="654.0" y="245.0"/>
+        <bpmndi:BPMNLabel labelStyle="LS1373394774252"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="E1373394774253__D38BD4A4-1A53-481A-9326-F40CB15150B9" bpmnElement="_D38BD4A4-1A53-481A-9326-F40CB15150B9">
+        <di:waypoint xsi:type="dc:Point" x="186.0" y="244.0"/>
+        <di:waypoint xsi:type="dc:Point" x="232.0" y="245.0"/>
+        <bpmndi:BPMNLabel labelStyle="LS1373394774252"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="E1373394774254__E610AE99-2587-4133-8441-CF1175FF654A" bpmnElement="_E610AE99-2587-4133-8441-CF1175FF654A">
+        <di:waypoint xsi:type="dc:Point" x="328.0" y="245.0"/>
+        <di:waypoint xsi:type="dc:Point" x="373.0" y="245.0"/>
+        <bpmndi:BPMNLabel labelStyle="LS1373394774252"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="E1373394774255__C11CD779-2E3D-4969-B5D2-DD8106511B25" bpmnElement="_C11CD779-2E3D-4969-B5D2-DD8106511B25">
+        <di:waypoint xsi:type="dc:Point" x="469.0" y="245.0"/>
+        <di:waypoint xsi:type="dc:Point" x="514.0" y="245.0"/>
+        <bpmndi:BPMNLabel labelStyle="LS1373394774252"/>
+      </bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+    <bpmndi:BPMNLabelStyle id="LS1373394774245">
+      <dc:Font name="Arial" size="8.0"/>
+    </bpmndi:BPMNLabelStyle>
+    <bpmndi:BPMNLabelStyle id="LS1373394774252">
+      <dc:Font/>
+    </bpmndi:BPMNLabelStyle>
+  </bpmndi:BPMNDiagram>
+</semantic:definitions>

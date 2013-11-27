@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xsi:schemaLocation="http://www.omg.org/spec/BPMN/20100524/MODEL BPMN20.xsd">
+  <bpmn:process id="WFP-6-" name="Neuer Prozess" isExecutable="false" processType="Private">
+    <bpmn:task id="_e6eb725a-34bc-45c7-aed0-9f9596cd7bee" name="Task 3">
+      <bpmn:incoming>_86283944-15ab-721e-47d5-7e36b0290a15</bpmn:incoming>
+      <bpmn:outgoing>_8d356fe6-1a25-2038-bd23-4077f46a1d4c</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:task id="_4f7d62d7-f0e6-46bc-be00-69e02da38f65" name="Task 2">
+      <bpmn:incoming>_74bd94af-6db0-e91b-f0a4-a2c0685eff2d</bpmn:incoming>
+      <bpmn:outgoing>_ff91bce4-0f61-4833-0091-9da29153a5ba</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:exclusiveGateway id="_35fe57a7-1302-44e2-bf58-032f11af7ecb" name="Gateway  (Split Flow)" gatewayDirection="Diverging">
+      <bpmn:incoming>_2ba63fdb-c309-0d96-c1a6-f4aa892fff57</bpmn:incoming>
+      <bpmn:outgoing>_74bd94af-6db0-e91b-f0a4-a2c0685eff2d</bpmn:outgoing>
+      <bpmn:outgoing>_86283944-15ab-721e-47d5-7e36b0290a15</bpmn:outgoing>
+      <bpmn:outgoing>_27c55441-6bcd-bff8-184a-7766b9a3cd72</bpmn:outgoing>
+    </bpmn:exclusiveGateway>
+    <bpmn:exclusiveGateway id="_33c66216-391c-49c2-aa19-d8f0b7f5f91d" name="Gateway  (Merge Flows)" gatewayDirection="Converging">
+      <bpmn:incoming>_8d356fe6-1a25-2038-bd23-4077f46a1d4c</bpmn:incoming>
+      <bpmn:incoming>_056460e5-ccc4-ad06-fe0b-85509507c872</bpmn:incoming>
+      <bpmn:outgoing>_bf5b8361-451b-4505-3513-a7b14ca628d4</bpmn:outgoing>
+    </bpmn:exclusiveGateway>
+    <bpmn:task id="_7d399717-1aba-47ac-8d7d-8aaa033255e0" name="Task 4">
+      <bpmn:incoming>_27c55441-6bcd-bff8-184a-7766b9a3cd72</bpmn:incoming>
+      <bpmn:outgoing>_056460e5-ccc4-ad06-fe0b-85509507c872</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:startEvent id="_6b5db6a9-037a-49ad-9201-09201e2aaa97" name="Start Event">
+      <bpmn:outgoing>_2302043a-8dd6-e626-df69-733a673f043c</bpmn:outgoing>
+    </bpmn:startEvent>
+    <bpmn:task id="_5a972b87-735d-454a-b31c-f52fb3afc5c7" name="Task 1">
+      <bpmn:incoming>_2302043a-8dd6-e626-df69-733a673f043c</bpmn:incoming>
+      <bpmn:outgoing>_2ba63fdb-c309-0d96-c1a6-f4aa892fff57</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:endEvent id="_258f51eb-b764-4a71-b681-3a01cca14143" name="End Event">
+      <bpmn:incoming>_ff91bce4-0f61-4833-0091-9da29153a5ba</bpmn:incoming>
+      <bpmn:incoming>_bf5b8361-451b-4505-3513-a7b14ca628d4</bpmn:incoming>
+    </bpmn:endEvent>
+    <bpmn:sequenceFlow id="_74bd94af-6db0-e91b-f0a4-a2c0685eff2d" sourceRef="_35fe57a7-1302-44e2-bf58-032f11af7ecb" targetRef="_4f7d62d7-f0e6-46bc-be00-69e02da38f65"/>
+    <bpmn:sequenceFlow id="_2302043a-8dd6-e626-df69-733a673f043c" sourceRef="_6b5db6a9-037a-49ad-9201-09201e2aaa97" targetRef="_5a972b87-735d-454a-b31c-f52fb3afc5c7"/>
+    <bpmn:sequenceFlow id="_bf5b8361-451b-4505-3513-a7b14ca628d4" sourceRef="_33c66216-391c-49c2-aa19-d8f0b7f5f91d" targetRef="_258f51eb-b764-4a71-b681-3a01cca14143"/>
+    <bpmn:sequenceFlow id="_056460e5-ccc4-ad06-fe0b-85509507c872" sourceRef="_7d399717-1aba-47ac-8d7d-8aaa033255e0" targetRef="_33c66216-391c-49c2-aa19-d8f0b7f5f91d"/>
+    <bpmn:sequenceFlow id="_2ba63fdb-c309-0d96-c1a6-f4aa892fff57" sourceRef="_5a972b87-735d-454a-b31c-f52fb3afc5c7" targetRef="_35fe57a7-1302-44e2-bf58-032f11af7ecb"/>
+    <bpmn:sequenceFlow id="_ff91bce4-0f61-4833-0091-9da29153a5ba" sourceRef="_4f7d62d7-f0e6-46bc-be00-69e02da38f65" targetRef="_258f51eb-b764-4a71-b681-3a01cca14143"/>
+    <bpmn:sequenceFlow id="_8d356fe6-1a25-2038-bd23-4077f46a1d4c" sourceRef="_e6eb725a-34bc-45c7-aed0-9f9596cd7bee" targetRef="_33c66216-391c-49c2-aa19-d8f0b7f5f91d"/>
+    <bpmn:sequenceFlow id="_27c55441-6bcd-bff8-184a-7766b9a3cd72" sourceRef="_35fe57a7-1302-44e2-bf58-032f11af7ecb" targetRef="_7d399717-1aba-47ac-8d7d-8aaa033255e0"/>
+    <bpmn:sequenceFlow id="_86283944-15ab-721e-47d5-7e36b0290a15" sourceRef="_35fe57a7-1302-44e2-bf58-032f11af7ecb" targetRef="_e6eb725a-34bc-45c7-aed0-9f9596cd7bee"/>
+  </bpmn:process>
+  <bpmndi:BPMNDiagram id="BPMNDiagram_1">
+    <bpmndi:BPMNPlane id="BPMNPlane_1"/>
+  </bpmndi:BPMNDiagram>
+</bpmn:definitions>
